@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive pricing component</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="content">
+      <h3>&nbsp;</h3>
+      <h1>Simple, traffic-based pricing</h1>
+      <h6>&nbsp;</h6>
+      <p> Sign-up for our 30-day trial. No credit card required. </p>
+    </div>
+    <div class="wraper">
+      <div id="textbox">
+        <p class="alignleft" id="view">100k views</p>
+        <p class="alignright"><span id="price">$16</span>/<span id="session">month</span></p>
+      </div>
+      <div style="clear: both;"></div>
+
+      <input type="range" id="range" min="0" max="100" value="60">
+      <div class="textbox2">
+        Monthly biling
+        <input type="range" min="0" max="1" value="0" name="" id="biling-btn">
+        Yearly biling <span id="discount">25% discount</span>
+      </div>
+      <div style="clear: both;"></div>
+      <hr>
+      <div class="bottom">
+        <div class="leftbottom">
+          <span id="txt">
+            <img src="images\icon-check.svg" alt="">
+            <span>&nbsp;&nbsp;Unlimited websites</span>
+          </span>
+          <span id="txt">
+            <img src="images\icon-check.svg" alt="">
+            <span>&nbsp;&nbsp;100% data ownership</span>
+          </span>
+          <span id="txt">
+            <img src="images\icon-check.svg" alt="">
+            <span>&nbsp;&nbsp;Email reports</span>
+          </span>
+        </div>
+        <div class="rightbottom">
+          <button>Start my trial</button>
+        </div>
+      </div>
+    </div>
+   
+  </div>
+  <!-- Simple, traffic-based pricing
+  Sign-up for our 30-day trial. No credit card required. 
+
+  Pageviews
+  $ /month
+
+  Monthly Billing
+  Yearly Billing 25% discount
+
+  Unlimited websites
+  100% data ownership
+  Email reports
+
+  Start my trial
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>. -->
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

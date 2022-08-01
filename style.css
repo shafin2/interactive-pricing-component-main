@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@500&display=swap');
+
+:root{
+    /* Screen widths */
+    --big-screens: 1440px;
+    --small-screens: 375px;
+
+    /* Colors */
+    /* Primary */
+    /* - Soft Cyan (Full#range Bar): hsl(174, 77%, 80%) */
+    --fs-b:hsl(174, 77%, 80%);
+    /* - Strong Cyan #range Backround): hsl(174, 86%, 45%) */
+    --s-b:hsl(174, 86%, 45%);
+    /* - Light Grayish Red (Discount Background): hsl(14, 92%, 95%) */
+    --d-b:hsl(14, 92%, 95%);
+    /* - Light Red (Discount Text): hsl(15, 100%, 70%) */
+    --d-t:hsl(15, 100%, 70%);
+    /* - Pale Blue (CTA Text): hsl(226, 100%, 87%) */
+    --cta-t:hsl(226, 100%, 87%);
+
+    /* Neutral */
+    /* - White (Pricing Component Background): hsl (0, 0%, 100%) */
+    --pc-b:hsl (0, 0%, 100%);
+    /* - Very Pale Blue (Main Background): hsl(230, 100%, 99%) */
+    --m-b: hsl(230, 100%, 99%);
+    /* - Light Grayish Blue (Empty#range Bar): hsl(224, 65%, 95%) */
+    --es-b: hsl(224, 65%, 95%);
+    /* - Light Grayish Blue (Toggle Background): hsl(223, 50%, 87%) */
+    --t-B: hsl(223, 50%, 87%);
+    /* - Grayish Blue (Text): hsl(225, 20%, 60%) */
+    --t-c: hsl(225, 20%, 60%);
+    /* - Dark Desaturated Blue (Text & CTA Background): hsl(227, 35%, 25%) */
+    --t-cta-b: hsl(227, 35%, 25%);
+
+    /* Fonts */
+    /* family */
+    --ff-primary:'Edu VIC WA NT Beginner', cursive;
+    /* size */  
+    --fs-heading: ;
+    --fs-paragraph: 15px;
+    /* weights */
+    --fw-light: 600;
+    --fw-bold: 800;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: var(--ff-primary);
+}
+body{
+    background-color:var(--m-b);
+}
+.container{
+    width: 100vw;
+    height: 50vh;
+    background-color: var(--es-b);
+    border-radius: 0 0 0 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.content{
+    background: url("images/pattern-circles.svg") center no-repeat;
+    position: absolute;
+    top: 4vh;
+    width: 80vw;
+    height: 25vh;
+    text-align: center;
+}
+.wraper{
+    position: absolute;
+    width: 350px;
+    height: 300px;
+    background-color: white;
+    top: 32vh;
+    padding: 20px  30px;
+    font-size: 20px;
+    border-radius: 10px;
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#textbox .alignleft {
+    margin-top: 3vh;
+	float: left;
+}
+
+#textbox .alignright {
+	float: right;
+}
+
+#textbox #price{
+    font-size: 50px;
+    font-weight: var(--fw-bold);
+}
+
+
+#range{
+    -webkit-appearance: none;
+    appearance: none;
+    outline: none;
+    width: 100%;
+    height: 10px;
+    margin-top:30px;
+    background: linear-gradient(90deg,var(--fs-b) 60%,var(--es-b) 0);
+}
+#range::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: var(--fs-b);
+    
+}
+#range::-webkit-slider-thumb:hover{
+    background: var(--s-b);
+    box-shadow: 0 0 0 5px var(--fs-b);
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+.textbox2{
+    margin:20px 0;
+    float: right;
+    font-size: var(--fs-paragraph);
+
+}
+.textbox2 input{
+    -webkit-appearance: none;
+    background: var(--es-b);
+    width: 40px;
+    position: relative;
+    top: 3px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.textbox2 input::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 18px;
+    border-radius: 50%;
+    background: var(--fs-b);
+    
+}
+.textbox2 input::-webkit-slider-thumb:hover{
+    background: var(--s-b);
+}
+#discount{
+    background-color: var(--d-b);
+    color: var(--d-t);
+}
+hr{
+    margin-top: 2vh;
+    width: 100%;
+}
+.bottom{
+    width: 100%;
+    height: 100px;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.leftbottom{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: var(--fs-paragraph);
+    row-gap: 3px;
+}
+.leftbottom img{
+    width: 15px;
+    height: 10px;
+}
+.rightbottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.rightbottom button{
+    width: 80%;
+    height: 35px;
+    background-color: var(--t-cta-b);
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+
+
+@media screen and (max-width: 500px) {
+    .wraper{
+        width: 250px;
+        height: 400px;
+        padding: 10px  20px;
+    }
+    #textbox{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 6px;
+    } 
+    
+    #range{
+        margin-top:20px;
+    }
+    .textbox2{
+        font-size:13px;
+        float: none;
+    }
+    .textbox2 input{
+        width: 30px;
+        height: 15px;
+        top: 3px;
+    }
+
+    .bottom{
+        
+        margin-top: 20px;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .rightbottom button{
+        width: 200px;
+        height: 35px;
+    }
+}
