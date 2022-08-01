@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: https://github.com/shafin2/interactive-rating-component
-- Live Site URL: https://shafin2.github.io/interactive-rating-component
+- Solution URL:https://github.com/shafin2/interactive-pricing-component-main
+- Live Site URL: https://shafin2.github.io/interactive-pricing-component-main/
 
 ## My process
 
